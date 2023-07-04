@@ -1,0 +1,519 @@
+/* 
+
+    Template Name: OONT
+
+*/
+
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --primary-font: 'Barlow Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+/* 
+    ===== CSS Index : Start =====
+    
+    - Exchange
+    - 
+
+
+    ===== CSS Index : End =====
+*/
+
+/* Exchange : Start */
+.query-body {
+    width: 800px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 60px;
+}
+.query-step__one {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+.query-description h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px;
+}
+.query-description p {
+    font-size: 22px;
+    margin: 15px 0px;
+}
+.query-description p a {
+    color: #000;
+}
+.query__order-form__body {
+    margin-top: 60px;
+}
+.query__order-form__body h5 {
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.query_orderForm {
+    margin-top: 25px;
+}
+.query_orderForm label{
+    display: block;
+    font-size: 22px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+.query_orderForm label span {
+    font-size: 16px;
+}
+.query_orderForm input.query-field{
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.query_orderForm-filed {
+    margin: 10px 0px;
+}
+.query__order-form__body .query_orderForm button {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+/* Exchange : End */
+
+/* Thanks : Start */
+.thanks-body {
+    width: 800px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 60px;
+}
+.thanks-mt160 {
+    margin-top: 160px !important;
+}
+.thanks-wrapper {
+    text-align: center;
+}
+.thanks-header h4 {
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.thanks-header ul {
+    margin: 45px ;
+}
+.thanks-header ul li {
+    list-style: none;
+}
+.thanks-header ul li p{
+    text-align: center;
+    position: relative;
+    font-size: 36px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.thanks-header ul li i {
+    font-size: 8px;
+    line-height: 22px;
+}
+/* .thanks-header ul li::after {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 10%;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+} */
+.thanks-wrapper a {
+    display: block;
+    width: 100%;
+}
+
+.thank_return-btn {
+    background: #000;
+    padding: 10px 10px;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 260px;
+    text-transform: uppercase;
+}
+.thanks-body.ret-thanks .thanks-wrapper .thanks-header ul li {
+    margin: 30px 0px;
+}
+.thanks-body.ret-thanks .thanks-wrapper .thanks-header ul li p{
+    font-size: 28px;
+}
+.thanks-body.ret-thanks .thanks-wrapper .thank_return-btn {
+    margin-top: 100px;
+}
+.ret-thanks.thanks-mt160 {
+    margin-top: 100px !important;
+}
+/* Thanks : End */
+
+/* Query Details : Start */
+.query_details-body {
+    width: 850px;
+    margin: auto;
+    border: 1px solid;
+}
+.query_detail-body h3 {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 36px;
+}
+.qd--terms {
+    padding: 30px 30px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: left;
+}
+.qd--terms h4 {
+    margin-bottom: 10px;
+}
+.qd--order-detail {
+    padding: 20px 30px;
+    text-align: left;
+}
+.qd--order-detail h4 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.qd--order-detail ul {
+    list-style: none;
+}
+.order_details--row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.od_col-left {
+    width: 30%;
+    padding: 25px 10px;
+}
+.od_col-right {
+    width: 20%;
+    padding: 30px 15px;
+}
+.od_col-left {
+    border-right: 1px solid #000;
+}
+.od_col-middle {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    text-align: left;
+}
+.od_col-middle h5 {
+    font-size: 18px;
+}
+.od_col-left img {
+    width: 100%;
+    height: 100% !important;
+}
+.qd--products-info-body h4 {
+    padding: 10px 10px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+ul.order_details-wrapper li {
+    list-style: none;
+}
+ul.order_details-wrapper li.order_details-item {
+    border-bottom: 1px solid #000;
+}
+/* ul.order_details-wrapper li.order_details-item:nth-last-child(1) {
+    border-bottom: 0;
+} */
+.od_product-detail h5 {
+    margin-bottom: 15px;
+}
+.od_product-detail ul li {
+    margin: 5px 0px;
+}
+ul.qd_customer-info li {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.od_col-right ul li {
+    margin: 10px 0px;
+}
+.od_col-right ul li select{
+    width: 100%;
+    font-size: 18px;
+}
+.query_details-body a.qd_submit-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0px;
+}
+.query_detail-body {
+    text-align: center;
+}
+.return_file--upload label input[type="file"]{
+    display: none;
+}
+.return_file--upload label {
+    border: .5px solid #000;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+}
+.return_file--upload label span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.od_return-product-comment textarea {
+    width: 100%;
+    padding: 5px 10px;
+    resize: none;
+}
+.od_return_reason-option select {
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+/* Query Details : End */
+
+/* Checkout : Start */
+.checkout_wrapper {
+    border: 1px solid #000;
+    width: 1250px;
+    margin: auto;
+}
+.checkout_mt {
+    margin-top: 30px;
+}
+.checkout_header {
+    text-align: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid #000;
+}
+.checkout_header h4 {
+    font-size: 32px;
+}
+.checkout_header ul {
+    list-style: none;
+    margin-top: 10px;
+}
+.checkout_header ul li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+.checkout_header ul li span {
+    font-size: 22px;
+}
+.checkout_order-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.checkout_order-col {
+    width: 50%;
+    border-left: 1px solid #000;
+}
+.checkout_order-col:nth-child(1) {
+    border: 0;
+}
+.checkOut_order-head {
+    padding: 15px 25px;
+    border-bottom: 1px solid #000;
+}
+.checkOut_order-head h5 {
+    font-size: 18px;
+}
+.checkout_order-form-wrapper {
+    padding: 20px;
+}
+.ch-o_name-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ch-o_first-name {
+    width: 50%;
+}
+.ch-o_last-name {
+    width: 50%;
+}
+.ch-o_contact .ch-o_contact-row,  
+.ch-o_address-row-1,
+.ch-o_address-row-2,
+.ch-o_address-row-3,
+.ch-o_address-row-4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ch-o_first-name label,
+.ch-o_last-name label,
+.ch-o_address-row-1 label,
+.ch-o_address-row-2 label,
+.ch-o_address-row-3 label,
+.ch-o_address-row-4 label,
+.ch-o_contact .ch-o_contact-row label,
+.ch_info .ch_additonal-info label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.ch-o_name-row .ch-o_first-name,
+.ch-o_name-row .ch-o_last-name,
+.ch-o_address-row-1 .ch-o_region,
+.ch-o_address-row-1 .ch-o_governorate, 
+.ch-o_address-row-2 .ch-o_address-area,
+.ch-o_address-row-2 .ch-o_address-block,
+.ch-o_address-row-3 .ch-o_address-street,
+.ch-o_address-row-3 .ch-o_address-avenue,
+.ch-o_contact .ch-o_contact-row .ch-o_contact-col-phn,
+.ch-o_contact .ch-o_contact-row .ch-o_contact-col-email {
+    width: 50%;
+}
+.ch-o_address-row-4 .ch-o_address-house_number  { 
+    width: 100%;
+}
+.ch-o_name-row .ch-o_first-name input,
+.ch-o_name-row .ch-o_last-name input,
+.ch-o_address-row-1 .ch-o_region input,
+.ch-o_address-row-1 .ch-o_governorate input, 
+.ch-o_address-row-2 .ch-o_address-area input,
+.ch-o_address-row-2 .ch-o_address-block input,
+.ch-o_address-row-3 .ch-o_address-street input,
+.ch-o_address-row-3 .ch-o_address-avenue input,
+.ch-o_address-row-4 .ch-o_address-house_number input,
+.ch-o_contact .ch-o_contact-row .ch-o_contact-col-phn input,
+.ch-o_contact .ch-o_contact-row .ch-o_contact-col-email input{
+    width: 100%;
+    padding: 5px 10px;
+}
+.ch-o_name-row .ch-o_last-name,
+.ch-o_address-row-1 .ch-o_governorate,
+.ch-o_address-row-2 .ch-o_address-block,
+.ch-o_address-row-3 .ch-o_address-avenue,
+.ch-o_contact .ch-o_contact-row .ch-o_contact-col-email {
+    padding-left: 10px;
+}
+.ch-o_name-row .ch-o_first-name,
+.ch-o_address-row-1 .ch-o_region,
+.ch-o_address-row-2 .ch-o_address-area,
+.ch-o_address-row-3 .ch-o_address-street,
+.ch-o_contact .ch-o_contact-row .ch-o_contact-col-phn {
+    padding-right: 10px;
+}
+.ch_info,
+.ch-o_contact,
+.ch-o_address-row-1,
+.ch-o_address-row-2,
+.ch-o_address-row-3,
+.ch-o_address-row-4 {
+    margin-top: 15px;
+}
+.ch-o_region select,
+.ch-o_governorate select {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.ch_info .ch_additonal-info textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+}
+.chos_product-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding: 20px 0px ;
+}
+.chos_product-image img.chs_p {
+    width: 100%;
+}
+.chos_product-image {
+    width: 50%;
+}
+.chos_product-detail h6 {
+    font-size: 26px;
+}
+p.chos_product-price {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+ul.chos_product-purchase-info {
+    list-style: none;
+    margin-top: 15px;
+}
+ul.chos_product-purchase-info li {
+    font-size: 18px;
+}
+.chos_product-total-detail {
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
+}
+.chos_product-total-detail table {
+    width: 100%;
+}
+table tr {
+    margin: 10px;
+}
+tbody tr td {
+    font-size: 18px;
+    padding: 5px 0px;
+}
+tbody tr td:nth-child(2) {
+    text-align: right;
+}
+tfoot tr th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+tfoot tr th:nth-child(2) {
+    text-align: right;
+}
+.checkout_order-submit {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #000;
+}
+.checkout_order-submit button {
+    background: #000;
+    border: 0;
+    color: #fff;
+    font-size: 22px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 3px;
+}
+/* Checkout : End */

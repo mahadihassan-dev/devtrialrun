@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout || Jase</title>
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap">
+</head>
+
+<body>
+    <main id="Checkout" class="checkout_wrapper checkout_mt">
+        <div class="chekout_body">
+            <div class="checkout_header">
+                <h4>Checkout</h4>
+                <ul>
+                    <li><span>2 items</span></li>
+                    <li><span>50 KWD</span></li>
+                </ul>
+            </div>
+            <form action="" class="checkout_order-form">
+                <div class="checkout_order-row">
+                    <div class="checkout_order-col checkout_order-col--left">
+                        <div class="checkout_order-form-wrappper">
+
+                            <div class="checkOut_order-head">
+                                <h5>Shipping Information</h5>
+                            </div>
+
+                            <div class="checkout_order-form-wrapper">
+                                <div class="ch-o_name-row">
+                                    <div class="ch-o_first-name">
+                                        <label for="cho-user_first-name">First Name *</label>
+                                        <input type="text" name="FirstName " id="cho-user_first-name"
+                                            class="checkout-filed">
+                                    </div>
+                                    <div class="ch-o_last-name">
+                                        <label for="cho-user_last-name">Last Name *</label>
+                                        <input type="text" name="LastName " id="cho-user_last-name"
+                                            class="checkout-filed">
+                                    </div>
+                                </div>
+                                <div class="ch-o_address">
+                                    <div class="ch-o_address-row-1">
+                                        <div class="ch-o_region">
+                                            <label for="chekcout_region">Region / Country *</label>
+                                            <select name="checkOutRegion" id="checkOutRegion">
+                                                <option value="1">Kuwait</option>
+                                                <option value="2">Qatar</option>
+                                                <option value="3">Dubai</option>
+                                                <option value="4">Oman</option>
+                                                <option value="5">Srya</option>
+                                                <option value="6">Palestine</option>
+                                            </select>
+                                        </div>
+                                        <div class="ch-o_governorate">
+                                            <label for="checkOutGovernorate">Governorate *</label>
+                                            <select name="" id="checkOutGovernorate">
+                                                <option value="1">Howlay</option>
+                                                <option value="2">Howlay - 1</option>
+                                                <option value="3">Howlay - 2</option>
+                                                <option value="4">Howlay - 3</option>
+                                                <option value="5">Howlay - 4</option>
+                                                <option value="6">Howlay - 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="ch-o_address-row-2">
+                                        <div class="ch-o_address-area">
+                                            <label for="">Area *</label>
+                                            <input type="text" id="" class="" required>
+                                        </div>
+                                        <div class="ch-o_address-block">
+                                            <label for="">Block *</label>
+                                            <input type="text" name="" id="" class="" required>
+                                        </div>
+                                    </div>
+                                    <div class="ch-o_address-row-3">
+                                        <div class="ch-o_address-street">
+                                            <label for="">Street Number / Name *</label>
+                                            <input type="text" name="" id="" class="" required>
+                                        </div>
+                                        <div class="ch-o_address-avenue">
+                                            <label for="">Avenue(optional)</label>
+                                            <input type="text" name="" id="" class="">
+                                        </div>
+                                    </div>
+                                    <div class="ch-o_address-row-4">
+                                        <div class="ch-o_address-house_number">
+                                            <label for="">House Number *</label>
+                                            <input type="text" name="" id="" class="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ch-o_contact">
+                                    <div class="ch-o_contact-row">
+                                        <div class="ch-o_contact-col-phn">
+                                            <div class="ch-o_contact-phn-number">
+                                                <label for="">Mobile Phone Number *</label>
+                                                <input type="tel" name="" id="" class="" required>
+                                            </div>
+                                        </div>
+                                        <div class="ch-o_contact-col-email">
+                                            <div class="ch-o_contact-email">
+                                                <label for="">Email Address</label>
+                                                <input type="email" name="" id="" class="" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ch_info">
+                                    <div class="ch_additonal-info">
+                                        <label for="chekoutAdditionalInfo">Additional Information *</label>
+                                        <textarea name="chekoutAdditionalInfo" id="chekoutAdditionalInfo" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="checkout_order-col checkout_order-col--right">
+                        <div class="checkOut_order-head">
+                            <h5>Order Summary</h5>
+                        </div>
+                        <div class="ch_order-summary-wrapper">
+                            <!-- chos - Check Out Order Summary -->
+                            <div class="chos_product-info">
+                                <div class="chos_product-image">
+                                    <img src="assets/images/product-1.jpg" alt="" class="chs_p">
+                                </div>
+                                <div class="chos_product-detail">
+                                    <h6 class="chos_product-name">Pink Sweat T-Shirt</h6>
+                                    <p class="chos_product-price">16.0 KWD</p>
+                                    <ul class="chos_product-purchase-info">
+                                        <li>SIZE : <span>S</span></li>
+                                        <li>QUANTITY : <span>2</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="chos_product-total-detail">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product-subtotal">SUBTOTAL</td>
+                                            <td class="product-subtotal-price">35.00 KWD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-shipping">SHIPPING</td>
+                                            <td class="product-shipping-price">3.00 KWD</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th class="product-total">TOTAL</th>
+                                            <th class="product-total-price">35.00 KWD</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout_order-submit">
+                    <button>Place Order</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

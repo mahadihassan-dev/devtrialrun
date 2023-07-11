@@ -520,7 +520,7 @@ tfoot tr th:nth-child(2) {
 .ExchangeBtn {
     position: relative;
 }
-.ExchangeBtn input[type="checkbox"].exchangeBtn {
+.ExchangeBtn input[type="radio"].exchangeBtn {
     display: none;
 }
 .ExchangeBtn span {
@@ -546,12 +546,12 @@ tfoot tr th:nth-child(2) {
     transform: translate(-50%, -50%) scale(0);
     transition: 350ms ease-in-out all;
 }
-.ExchangeBtn input[type="checkbox"]:checked ~ span {
+.ExchangeBtn input[type="radio"]:checked ~ span {
     border: 1px solid #000;
 }
 .ExchangeBtn label.exchangeBtn-label {
     font-size: 22px;
 }
-.ExchangeBtn input[type="checkbox"]:checked ~ span::after {
+.ExchangeBtn input[type="radio"]:checked ~ span::after {
     transform: translate(-50%, -50%) scale(1);
 }

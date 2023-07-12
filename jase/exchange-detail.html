@@ -6,6 +6,7 @@
     <title>Exchange || Jase</title>
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +38,7 @@
             <div class="qd--products-info-body">
                 <h4>Order Details</h4>
                 <ul class="order_details-wrapper">
+                    <!-- Product Card -->
                     <li class="order_details-item">
                         <div class="order_details--row">
                             <div class="od_col-left od_product-img">
@@ -57,8 +59,8 @@
                                         <span></span>
                                     </label>
                                 </div>
-                                <ul>
-                                    <li class="od_change-size">
+                                <ul class="od_change-size">
+                                    <li>
                                         <select name="" id="ex-product-size">
                                             <option value="-">Change Size</option>
                                             <option value="S">S</option>
@@ -70,82 +72,6 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </li>
-                    <li class="order_details-item">
-                        <div class="order_details--row">
-                            <div class="od_col-left od_product-img">
-                                <img src="assets/images/product-2.jpg" alt="">
-                            </div>
-                            <div class="od_col-middle od_product-detail">
-                                <h5>Pink Sweat T-Shirt</h5>
-                                <ul>
-                                    <li>Size: <span>M</span></li>
-                                    <li>Quantity: <span>1</span></li>
-                                    <li>KWD 65</li>
-                                </ul>
-                            </div>
-                            <div class="od_col-right od_product-option">
-                                <div class="ExchangeBtn">
-                                    <label for="exChangeBtn1" class="exchangeBtn-label">
-                                        <input type="radio" name="ExchangeBtn" id="exChangeBtn1" class="exchangeBtn" role="button">
-                                        Exchange
-                                        <span></span>
-                                    </label>
-                                </div>
-                                <ul>
-                                    <li class="od_change-size">
-                                        <select name="" id="ex-product-size">
-                                            <option value="-">Change Size</option>
-                                            <option value="S">S</option>
-                                            <option value="M">M</option>
-                                            <option value="L">L</option>
-                                            <option value="XL">XL</option>
-                                            <option value="XXL">XXL</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="order_details-item">
-                        <div class="order_details--row">
-                            
-                            <div class="od_col-left od_product-img">
-                                <img src="assets/images/product-3.jpg" alt="">
-                            </div>
-
-                            <div class="od_col-middle od_product-detail">
-                                <h5>Pink Sweat T-Shirt</h5>
-                                <ul>
-                                    <li>Size: <span>M</span></li>
-                                    <li>Quantity: <span>1</span></li>
-                                    <li>KWD 65</li>
-                                </ul>
-                            </div>
-
-                            <div class="od_col-right od_product-option">
-                                <div class="ExchangeBtn">
-                                    <label for="exChangeBtn2" class="exchangeBtn-label">
-                                        <input type="radio" name="ExchangeBtn" id="exChangeBtn2" class="exchangeBtn" role="button">
-                                        Exchange
-                                        <span></span>
-                                    </label>
-                                </div>
-                                <ul>
-                                    <li class="od_change-size">
-                                        <select name="" id="ex-product-size">
-                                            <option value="-">Change Size</option>
-                                            <option value="S">S</option>
-                                            <option value="M">M</option>
-                                            <option value="L">L</option>
-                                            <option value="XL">XL</option>
-                                            <option value="XXL">XXL</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                            </div>
-
                         </div>
                     </li>
                 </ul>
@@ -154,5 +80,17 @@
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.min.js"></script>
+    <script>
+        const radioBtn = document.querySelector('.ExchangeBtn .exchangeBtn-label .exchangeBtn');
+        const hiddenSection = document.querySelector('.od_change-size');
+
+        radioBtn.addEventListener('change', function() {
+            if (radioBtn.checked) {
+                hiddenSection.style.display = 'block';
+            } else {
+                hiddenSection.style.display = 'none !important';
+            }
+        });
+    </script>
 </body>
 </html>

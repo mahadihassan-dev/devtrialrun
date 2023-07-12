@@ -36,6 +36,31 @@
     ul.chos_product-purchase-info li {
         font-size: 16px;
     }
+    .query_details-body {
+        width: 100%;
+    }
+    .order_details--row {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .od_col-left {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+    .od_col-middle {
+        width: 100%;
+    }
+    .od_col-right {
+        border-top: 1px solid #000;
+        width: 100%;
+    }
+    .query_details-body {
+        width: 100%;
+    }
+
 }
   
 @media only screen and (min-width: 361px) and (max-width: 479px) {
@@ -75,6 +100,27 @@
     }
     ul.chos_product-purchase-info li {
         font-size: 16px;
+    }
+    .query_details-body {
+        width: 100%;
+    }
+    .order_details--row {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .od_col-left {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+    .od_col-middle {
+        width: 100%;
+    }
+    .od_col-right {
+        width: 100%;
+        border-top: 1px solid #000;
     }
 }
   
@@ -116,6 +162,27 @@
     ul.chos_product-purchase-info li {
         font-size: 16px;
     }
+    .query_details-body {
+        width: 100%;
+    }
+    .order_details--row {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .od_col-left {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+    .od_col-middle {
+        width: 100%;
+    }
+    .od_col-right {
+        width: 100%;
+        border-top: 1px solid #000;
+    }
 }
   
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -155,6 +222,27 @@
     }
     ul.chos_product-purchase-info li {
         font-size: 16px;
+    }
+    .query_details-body {
+        width: 100%;
+    }
+    .order_details--row {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .od_col-left {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+    .od_col-middle {
+        width: 100%;
+    }
+    .od_col-right {
+        width: 100%;
+        border-top: 1px solid #000;
     }
 }
   

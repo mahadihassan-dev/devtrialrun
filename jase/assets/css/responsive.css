@@ -60,7 +60,48 @@
     .query_details-body {
         width: 100%;
     }
-
+    .thanks-body {
+        width: 100% !important;
+        padding: 30px;
+    }
+    .thanks-header ul {
+        margin: 20px;
+    }
+    .thanks-header h4 {
+        font-size: 26px;
+    }
+    .thank_return-btn {
+        margin-top: 120px;
+    }
+    .thanks-header ul li p {
+        font-size: 16px;
+    }
+    .thanks-body.ret-thanks .thanks-wrapper .thanks-header ul li p {
+        font-size: 16px;
+    }
+    .query-body {
+        width: 100%;
+        padding: 30px;
+    }
+    .query-description h3 {
+        font-size: 22px;
+    }
+    .query-description p {
+        font-size: 16px;
+    }
+    .query__order-form__body h5 {
+        font-size: 18px;
+    }
+    .query_orderForm label {
+        font-size: 16px;
+    }
+    .query_orderForm label span {
+        font-size: 12px;
+    }
+    .query__order-form__body .query_orderForm button {
+        font-size: 16px;
+        padding: 5px;
+    }
 }
   
 @media only screen and (min-width: 361px) and (max-width: 479px) {
@@ -121,6 +162,25 @@
     .od_col-right {
         width: 100%;
         border-top: 1px solid #000;
+    }
+    .thanks-body {
+        width: 100% !important;
+        padding: 30px;
+    }
+    .thanks-header ul {
+        margin: 20px;
+    }
+    .thanks-header h4 {
+        font-size: 26px;
+    }
+    .thank_return-btn {
+        margin-top: 120px;
+    }
+    .thanks-header ul li p {
+        font-size: 16px;
+    }
+    .thanks-body.ret-thanks .thanks-wrapper .thanks-header ul li p {
+        font-size: 16px;
     }
 }
   
@@ -183,6 +243,25 @@
         width: 100%;
         border-top: 1px solid #000;
     }
+    .thanks-body {
+        width: 100% !important;
+        padding: 30px;
+    }
+    .thanks-header ul {
+        margin: 20px;
+    }
+    .thanks-header h4 {
+        font-size: 26px;
+    }
+    .thank_return-btn {
+        margin-top: 120px;
+    }
+    .thanks-header ul li p {
+        font-size: 16px;
+    }
+    .thanks-body.ret-thanks .thanks-wrapper .thanks-header ul li p {
+        font-size: 16px;
+    }
 }
   
 @media only screen and (min-width: 768px) and (max-width: 979px) {
@@ -243,6 +322,25 @@
     .od_col-right {
         width: 100%;
         border-top: 1px solid #000;
+    }
+    .thanks-body {
+        width: 100% !important;
+        padding: 30px;
+    }
+    .thanks-header ul {
+        margin: 20px;
+    }
+    .thanks-header h4 {
+        font-size: 26px;
+    }
+    .thank_return-btn {
+        margin-top: 120px;
+    }
+    .thanks-header ul li p {
+        font-size: 16px;
+    }
+    .thanks-body.ret-thanks .thanks-wrapper .thanks-header ul li p {
+        font-size: 16px;
     }
 }
   

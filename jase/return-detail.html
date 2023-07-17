@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exchange || Jase</title>
+    <title>Return || Jase</title>
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -15,163 +15,206 @@
 <body>
     <main id="return-details" class="query_details-body query_detail-wrapper query-step__one">
         <div class="query_detail-body">
-            <h3>Return</h3>
-            <div class="qd--terms">
-                <h4>THESE ARE THE STEPS YOU SHOULD FOLLOW:</h4>
-                <ol type="1">
-                    <li>SELECT PRODUCT FOR EXCHANGE: CHOOSE THE PRODUCT THAT YOU WISH TO EXCHANGE FROM THE LIST PROVIDED. IF THE DESIRED PRODUCT IS STILL AVAILABLE, YOU CAN PROCEED WITH THE EXCHANGE.</li>
-                    <li>CHOOSE ALTERNATIVE PRODUCT (IF APPLICABLE): IF THE PRODUCT YOU WANT TO EXCHANGE IS SOLD OUT, PLEASE SELECT AN ALTERNATIVE PRODUCT FROM THE AVAILABLE OPTIONS. YOU CAN BROWSE THROUGH THE LIST OF PRODUCTS AND CHOOSE THE ONE YOU PREFER AS A REPLACEMENT</li>
-                    <li>SUBMIT EXCHANGE REQUEST: ONCE YOU HAVE SELECTED THE PRODUCT FOR EXCHANGE (EITHER THE ORIGINAL PRODUCT OR AN ALTERNATIVE), CLICK THE "SUBMIT" OR "REQUEST EXCHANGE" BUTTON TO PROCEED.</li>
-                    <li>SUBMIT RETURN REQUEST: ONCE YOU HAVE SELECTED THE PRODUCTS AND REASONS FOR RETURN, CLICK THE "REQUEST RETURN" BUTTON TO INITIATE THE RETURN PROCESS.</li>
-                    <li>PAY SHIPPING FEES/ SUBMIT: TO PROCEED WITH THE EXCHANGE, A SHIPPING FEE MAY APPLY. OUR TEAM WILL PROCESS YOUR REQUEST WITHIN 1-3 BUSINESS DAYS. DURING THIS TIME, WE WILL PREPARE THE EXCHANGE AND MAKE NECESSARY ARRANGEMENTS FOR SHIPPING.</li>
-                </ol>
+            <div class="query_detail-header">
+                <h3>Return</h3>
+                <div class="qd--terms">
+                    <h4>THESE ARE THE STEPS YOU SHOULD FOLLOW:</h4>
+                    <ol type="1">
+                        <li>SELECT PRODUCT FOR EXCHANGE: CHOOSE THE PRODUCT THAT YOU WISH TO EXCHANGE FROM THE LIST PROVIDED. IF THE DESIRED PRODUCT IS STILL AVAILABLE, YOU CAN PROCEED WITH THE EXCHANGE.</li>
+                        <li>CHOOSE ALTERNATIVE PRODUCT (IF APPLICABLE): IF THE PRODUCT YOU WANT TO EXCHANGE IS SOLD OUT, PLEASE SELECT AN ALTERNATIVE PRODUCT FROM THE AVAILABLE OPTIONS. YOU CAN BROWSE THROUGH THE LIST OF PRODUCTS AND CHOOSE THE ONE YOU PREFER AS A REPLACEMENT</li>
+                        <li>SUBMIT EXCHANGE REQUEST: ONCE YOU HAVE SELECTED THE PRODUCT FOR EXCHANGE (EITHER THE ORIGINAL PRODUCT OR AN ALTERNATIVE), CLICK THE "SUBMIT" OR "REQUEST EXCHANGE" BUTTON TO PROCEED.</li>
+                        <li>SUBMIT RETURN REQUEST: ONCE YOU HAVE SELECTED THE PRODUCTS AND REASONS FOR RETURN, CLICK THE "REQUEST RETURN" BUTTON TO INITIATE THE RETURN PROCESS.</li>
+                        <li>PAY SHIPPING FEES/ SUBMIT: TO PROCEED WITH THE EXCHANGE, A SHIPPING FEE MAY APPLY. OUR TEAM WILL PROCESS YOUR REQUEST WITHIN 1-3 BUSINESS DAYS. DURING THIS TIME, WE WILL PREPARE THE EXCHANGE AND MAKE NECESSARY ARRANGEMENTS FOR SHIPPING.</li>
+                    </ol>
+                </div>
             </div>
-            <div class="qd--order-detail">
-                <h4 class="order-id">#1099</h4>
-                <ul class="qd_customer-info">
-                    <li>Customer: <span>Customer Name</span></li> 
-                    <li>Tel: <span>999999999</span></li>
-                    <li>Email: <span>user@email.com</span></li>
-                    <li>Address: <span>10001, NY, USA</span></li>
-                </ul>
+            <div class="query_detail-wrapper">
+                <form action="">
+                    <div class="qd--order-detail">
+                        <h4 class="order-id">#1099</h4>
+                        <ul class="qd_customer-info">
+                            <li>Customer: <span>Customer Name</span></li> 
+                            <li>Tel: <span>999999999</span></li>
+                            <li>Email: <span>user@email.com</span></li>
+                            <li>Address: <span>10001, NY, USA</span></li>
+                        </ul>
+                    </div>
+                    <div class="qd--products-info-body">
+                        <h4>Order Details</h4>
+                        <ul class="order_details-wrapper">
+                            <li class="order_details-item">
+                                <div class="order_details--row">
+                                    
+                                    <div class="od_col-left od_product-img">
+                                        <img src="assets/images/product-3.jpg" alt="">
+                                    </div>
+        
+                                    <div class="od_col-middle od_product-detail">
+                                        <h5>Pink Sweat T-Shirt</h5>
+                                        <ul>
+                                            <li>Size: <span>M</span></li>
+                                            <li>Quantity: <span>1</span></li>
+                                            <li>KWD 65</li>
+                                        </ul>
+                                    </div>
+        
+                                    <div class="od_col-right od_product-option">
+                                        <ul>
+                                            <li class="od_return_reason-option">
+                                                <select name="" id="ex-product-size">
+                                                    <option value="-">Reason</option>
+                                                    <option value="1">Wrong Item Received</option>
+                                                    <option value="2">Damaged/Deffective Product</option>
+                                                    <option value="3">Changed My Mind</option>
+                                                    <option value="4">Others</option>
+                                                </select>
+                                            </li>
+                                            <li class="od_return_upload">
+                                                <div class="return_file--upload">
+                                                    <label for="returnReasonFile">
+                                                        <span><i class='bx bx-cloud-upload'></i> Upload</span>
+                                                        <input type="file" name="return_upload-file" id="returnReasonFile" class="return_reason-file" required>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="od_return-product-comment">
+                                                <textarea type="text" name="return_comment" id="returnComment" class="return__comments" placeholder="Comments" required></textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </li>
+                            <li class="order_details-item">
+                                <div class="order_details--row">
+                                    
+                                    <div class="od_col-left od_product-img">
+                                        <img src="assets/images/product-2.jpg" alt="">
+                                    </div>
+        
+                                    <div class="od_col-middle od_product-detail">
+                                        <h5>Pink Sweat T-Shirt</h5>
+                                        <ul>
+                                            <li>Size: <span>M</span></li>
+                                            <li>Quantity: <span>1</span></li>
+                                            <li>KWD 65</li>
+                                        </ul>
+                                    </div>
+        
+                                    <div class="od_col-right od_product-option">
+                                        <ul>
+                                            <li class="od_return_reason-option">
+                                                <select name="" id="ex-product-size">
+                                                    <option value="-">Reason</option>
+                                                    <option value="1">Wrong Item Received</option>
+                                                    <option value="2">Damaged/Deffective Product</option>
+                                                    <option value="3">Changed My Mind</option>
+                                                    <option value="4">Others</option>
+                                                </select>
+                                            </li>
+                                            <li class="od_return_upload">
+                                                <div class="return_file--upload">
+                                                    <label for="returnReasonFile">
+                                                        <span><i class='bx bx-cloud-upload'></i> Upload</span>
+                                                        <input type="file" name="return_upload-file" id="returnReasonFile" class="return_reason-file" onchange="readURL(this);" required>
+                                                    </label>
+                                                    <img src="http://placehold.it/180" alt="" id="inputImgPrev">
+                                                </div>
+                                            </li>
+                                            <li class="od_return-product-comment">
+                                                <textarea type="text" name="return_comment" id="returnComment" class="return__comments" placeholder="Comments" required></textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </li>
+                            <li class="order_details-item">
+                                <div class="order_details--row">
+                                    
+                                    <div class="od_col-left od_product-img">
+                                        <img src="assets/images/product-1.jpg" alt="">
+                                    </div>
+        
+                                    <div class="od_col-middle od_product-detail">
+                                        <h5>Pink Sweat T-Shirt</h5>
+                                        <ul>
+                                            <li>Size: <span>M</span></li>
+                                            <li>Quantity: <span>1</span></li>
+                                            <li>KWD 65</li>
+                                        </ul>
+                                    </div>
+        
+                                    <div class="od_col-right od_product-option">
+                                        <ul>
+                                            <li class="od_return_reason-option">
+                                                <select name="" id="ex-product-size" required>
+                                                    <option value="-">Reason</option>
+                                                    <option value="1">Wrong Item Received</option>
+                                                    <option value="2">Damaged/Deffective Product</option>
+                                                    <option value="3">Changed My Mind</option>
+                                                    <option value="4">Others</option>
+                                                </select>
+                                            </li>
+                                            <li class="od_return_upload">
+                                                <div class="return_file--upload">
+                                                    <label for="returnReasonFile">
+                                                        <span><i class='bx bx-cloud-upload'></i> Upload</span>
+                                                        <input type="file" name="return_upload-file" id="returnReasonFile" class="return_reason-file" required>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="od_return-product-comment">
+                                                <textarea type="text" name="return_comment" id="returnComment" class="return__comments" placeholder="Comments" required></textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="qd_submit-btn">Request Return</button>
+                </form>
             </div>
-            <div class="qd--products-info-body">
-                <h4>Order Details</h4>
-                <ul class="order_details-wrapper">
-                    <li class="order_details-item">
-                        <div class="order_details--row">
-                            
-                            <div class="od_col-left od_product-img">
-                                <img src="assets/images/product-3.jpg" alt="">
-                            </div>
-
-                            <div class="od_col-middle od_product-detail">
-                                <h5>Pink Sweat T-Shirt</h5>
-                                <ul>
-                                    <li>Size: <span>M</span></li>
-                                    <li>Quantity: <span>1</span></li>
-                                    <li>KWD 65</li>
-                                </ul>
-                            </div>
-
-                            <div class="od_col-right od_product-option">
-                                <ul>
-                                    <li class="od_return_reason-option">
-                                        <select name="" id="ex-product-size">
-                                            <option value="-">Reason</option>
-                                            <option value="1">Wrong Item Received</option>
-                                            <option value="2">Damaged/Deffective Product</option>
-                                            <option value="3">Changed My Mind</option>
-                                            <option value="4">Others</option>
-                                        </select>
-                                    </li>
-                                    <li class="od_return_upload">
-                                        <div class="return_file--upload">
-                                            <label for="returnReasonFile">
-                                                <span><i class='bx bx-cloud-upload'></i> Upload</span>
-                                                <input type="file" name="return_upload-file" id="returnReasonFile" class="return_reason-file">
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li class="od_return-product-comment">
-                                        <textarea type="text" name="return_comment" id="returnComment" class="return__comments" placeholder="Comments"></textarea>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="order_details-item">
-                        <div class="order_details--row">
-                            
-                            <div class="od_col-left od_product-img">
-                                <img src="assets/images/product-2.jpg" alt="">
-                            </div>
-
-                            <div class="od_col-middle od_product-detail">
-                                <h5>Pink Sweat T-Shirt</h5>
-                                <ul>
-                                    <li>Size: <span>M</span></li>
-                                    <li>Quantity: <span>1</span></li>
-                                    <li>KWD 65</li>
-                                </ul>
-                            </div>
-
-                            <div class="od_col-right od_product-option">
-                                <ul>
-                                    <li class="od_return_reason-option">
-                                        <select name="" id="ex-product-size">
-                                            <option value="-">Reason</option>
-                                            <option value="1">Wrong Item Received</option>
-                                            <option value="2">Damaged/Deffective Product</option>
-                                            <option value="3">Changed My Mind</option>
-                                            <option value="4">Others</option>
-                                        </select>
-                                    </li>
-                                    <li class="od_return_upload">
-                                        <div class="return_file--upload">
-                                            <label for="returnReasonFile">
-                                                <span><i class='bx bx-cloud-upload'></i> Upload</span>
-                                                <input type="file" name="return_upload-file" id="returnReasonFile" class="return_reason-file">
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li class="od_return-product-comment">
-                                        <textarea type="text" name="return_comment" id="returnComment" class="return__comments" placeholder="Comments"></textarea>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="order_details-item">
-                        <div class="order_details--row">
-                            
-                            <div class="od_col-left od_product-img">
-                                <img src="assets/images/product-1.jpg" alt="">
-                            </div>
-
-                            <div class="od_col-middle od_product-detail">
-                                <h5>Pink Sweat T-Shirt</h5>
-                                <ul>
-                                    <li>Size: <span>M</span></li>
-                                    <li>Quantity: <span>1</span></li>
-                                    <li>KWD 65</li>
-                                </ul>
-                            </div>
-
-                            <div class="od_col-right od_product-option">
-                                <ul>
-                                    <li class="od_return_reason-option">
-                                        <select name="" id="ex-product-size">
-                                            <option value="-">Reason</option>
-                                            <option value="1">Wrong Item Received</option>
-                                            <option value="2">Damaged/Deffective Product</option>
-                                            <option value="3">Changed My Mind</option>
-                                            <option value="4">Others</option>
-                                        </select>
-                                    </li>
-                                    <li class="od_return_upload">
-                                        <div class="return_file--upload">
-                                            <label for="returnReasonFile">
-                                                <span><i class='bx bx-cloud-upload'></i> Upload</span>
-                                                <input type="file" name="return_upload-file" id="returnReasonFile" class="return_reason-file">
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li class="od_return-product-comment">
-                                        <textarea type="text" name="return_comment" id="returnComment" class="return__comments" placeholder="Comments"></textarea>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <a href="#" class="qd_submit-btn">Request Return</a>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.min.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script>
+
+        function readURL(input, imgControl) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+            imgControl.src = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+        }
+
+        const imgInput = document.querySelector("#img");
+        const imgPreview = document.querySelector("#ImgPreview");
+        const previewContainer = document.querySelector(".preview");
+        const removeBtn = document.querySelector("#removeImage");
+
+        imgInput.addEventListener("change", function() {
+        const imgControl = imgPreview;
+        readURL(this, imgControl);
+        previewContainer.classList.add("it");
+        removeBtn.classList.add("rmv");
+        });
+
+        removeBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        imgInput.value = "";
+        imgPreview.src = "";
+        previewContainer.classList.remove("it");
+        removeBtn.classList.remove("rmv");
+        });
+
+
+    </script>
 </body>
 </html>

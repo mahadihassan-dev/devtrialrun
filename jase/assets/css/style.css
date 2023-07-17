@@ -208,7 +208,7 @@
 }
 .od_col-left {
     width: 30%;
-    padding: 25px 10px;
+    padding: 85px 10px;
 }
 .od_col-right {
     width: 20%;
@@ -262,7 +262,7 @@ ul.qd_customer-info li {
     width: 100%;
     font-size: 18px;
 }
-.query_details-body a.qd_submit-btn {
+.query_details-body .qd_submit-btn {
     display: inline-block;
     padding: 10px 15px;
     font-weight: normal;
@@ -273,6 +273,7 @@ ul.qd_customer-info li {
     color: #fff;
     text-align: center;
     margin: 15px 0px;
+    border: 0;
 }
 .query_detail-body {
     text-align: center;
@@ -557,4 +558,9 @@ tfoot tr th:nth-child(2) {
 }
 .od_change-size {
     display: none;
+}
+img#inputImgPrev {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;    
 }

@@ -1,0 +1,370 @@
+/* 
+    ========== Project Information ==========
+    Theme Name: E-Commerce
+    Front End Developed by: Mahadi
+    Date: 21/08/2023
+    Live URL: devtrialrun.netlify.app/mildredzhang
+
+*/
+
+/* 
+    ========== INDEX :: Start ========== 
+    => Global Root Varriables
+    => CSS Reset
+    => Authentication Main
+    => Login Page - Authentication
+    ========== INDEX :: End ========== 
+*/
+
+:root {
+    --primary-color: #f9f8f4;
+    --primary-color-1: #f9f8f4;
+    --secondary-color: #0f0f0f;
+    --secondary-color-1: #909090;
+    --shade-color: #A8A196;
+    --shade-color-1: #DFDCD8;
+    --shade-color-2: #EEEEEE;
+    --solid-black: #0F0F0F;
+    --solid-white: #FFFFFF;
+    --nav-bg: #6d6763;
+    --primary-font: 'Josefin Sans', sans-serif;
+    --default-transation: all ease-in-out .3s;
+}
+
+/* ========== Global : End ========== */
+
+/* ========== Reset :: Start ========== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+main {
+    display: block;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ========== Reset :: End ========== */
+
+/* ========== Header :: Start ========== */
+
+.header-search form {
+    display: flex;
+    align-items: center;
+    padding: 2px 17px;
+    border: 1px solid var(--secondary-color-1);
+}
+.header-search form button {
+    border: 0;
+    background: no-repeat;
+    padding: 5px;
+    cursor: pointer;
+}
+.header-search form input {
+    padding: 5px 10px;
+    border: 0;
+}
+ul.lang-option li {
+    position: relative;
+    padding: 10px 15px;
+    transition: all ease-in-out .3s;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    color: var(--secondary-color-1);
+}
+ul.lang-option li:hover {
+    background-color: var(--solid-black);
+    color: var(--solid-white);
+}
+ul.lang-option li,
+ul.lang-option li ul.lang--child li{
+    transition: all ease-in-out .3s;
+}
+ul.lang-option li:hover ul.lang--child {
+    visibility: visible;
+}
+ul.lang-option li ul.lang--child {
+    position: absolute;
+    visibility: hidden;
+    transition: all ease-in-out .3s;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--solid-black);
+    color: var(--solid-white);
+}
+ul.lang-option li ul.lang--child li {
+    margin: 2px 0px;
+    padding: 5px 0px;
+    transition: all ease-in-out .3s;
+}
+ul.lang-option li ul.lang--child li:hover {
+    box-shadow: none;
+    background-color: var(--solid-white);
+    color: var(--solid-black);
+}
+.header-search form button i {
+    margin-top: 5px;
+    font-size: 22px;
+}
+.header-auth ul li a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--nav-bg);
+}
+.header-nav {
+    background: var(--nav-bg);
+}
+ul.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+ul.main-nav li a {
+    display: block;
+    color: var(--solid-white);
+    padding: 20px 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    transition: var(--default-transation);
+}
+ul.main-nav li a:hover {
+    background: var(--solid-black);
+}
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+}
+.nav-btn li i {
+    color: var(--shade-color-2);
+    font-size: 22px;
+}
+/* ========== Header :: End ========== */
+
+/* ========== Main Content :: Start ========== */
+.breadcrumb {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.collection-breadcrumb {
+    background: url('../images/background/collections-bg.png');
+}
+.mens-collection-breadcrumb {
+    background: url('../images/background/mens-casual.png');
+}
+.breadcrumb-content {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+.breadcrumb-content h2 {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+    color: var(--primary-color);
+}
+.breadcrumb-content p {
+    color: var(--solid-white);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 65%;
+}
+/* Collection Card :: Start */
+.collection-product--card {
+    position: relative;
+}
+.collection-product--card span {
+    color: var(--solid-black);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    position: absolute;
+    top: 155px;
+    right: -95px;
+    transform: rotate(90deg);
+}
+a.shop-btn {
+    padding: 15px 20px;
+    background-color: #0f0f0fbd;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    bottom: 35px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+a.shop-btn i {
+    margin-left: 10px;
+}
+/* Collection Card :: End */
+
+/* ========== Main Content :: End ========== */
+
+
+/* ========== Footer :: Start ========== */
+.footer-primary {
+    background-color: var(--secondary-color);
+    /* height: 65vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+.footer-main {
+    padding: 60px 0px;
+}
+.footer-widget h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--primary-color-1);
+}
+.footer-widget p {
+    color: var(--bw-white, #FFF);
+    text-decoration-line: underline;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 22px;
+}
+ul.link-row {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+ul.link-row li.link-col ul li {
+    margin: 25px 0px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration-line: underline !important;
+    color: var(--bw-white, #FFF);
+}
+ul.link-row li.link-col ul li a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration-line: underline !important;
+    color: var(--bw-white, #FFF);
+}
+.footer-social ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.footer-social ul li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.footer-copyright {
+    position: relative;
+}
+.footer-copyright::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--shade-color-1);
+    top: 0;
+    left: 0;
+}
+.copyright-wrapper {
+    padding: 30px;
+    text-align: center;
+}
+.copyright-wrapper p {
+    color: var(--solid-white);
+    line-height: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+/* ========== Footer :: End ========== */

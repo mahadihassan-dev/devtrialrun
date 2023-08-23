@@ -248,6 +248,15 @@ ul.main-nav li a:hover {
 /* Collection Card :: Start */
 .collection-product--card {
     position: relative;
+    overflow: hidden;
+}
+.collection-product--card img {
+    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.1s ease-in-out;
+}
+.collection-product--card:hover img {
+    transform: scale(1.07) rotate(.95deg);
+    -webkit-transform: scale(1.07) rotate(.95deg);
 }
 .collection-product--card span {
     color: var(--solid-black);
